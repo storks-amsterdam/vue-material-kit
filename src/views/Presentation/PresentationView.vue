@@ -2,8 +2,8 @@
 import { onMounted, onUnmounted } from "vue";
 
 //example components
-import NavbarDefault from "../..//examples/navbars/NavbarDefault.vue";
-import DefaultFooter from "../../examples/footers/FooterDefault.vue";
+import NavbarDefault from "@/components/NavbarDefault.vue";
+import FooterDefault from "@/components/FooterDefault.vue";
 import Header from "../../examples/Header.vue";
 import FilledInfoCard from "../../examples/cards/infoCards/FilledInfoCard.vue";
 
@@ -20,7 +20,8 @@ import PresentationTestimonials from "./Sections/PresentationTestimonials.vue";
 import PresentationInformation from "./Sections/PresentationInformation.vue";
 
 //images
-import vueMkHeader from "@/assets/img/vue-mk-header.jpg";
+// import vueMkHeader from "@/assets/img/vue-mk-header.jpg";
+import vueBLLHeader from "@/assets/img/dreamteam_burning.png";
 import wavesWhite from "@/assets/img/waves-white.svg";
 import logoBootstrap from "@/assets/img/logos/bootstrap5.jpg";
 import logoTailwind from "@/assets/img/logos/icon-tailwind.jpg";
@@ -52,7 +53,7 @@ onUnmounted(() => {
   <Header>
     <div
       class="page-header min-vh-75"
-      :style="`background-image: url(${vueMkHeader})`"
+      :style="`background-image: url(${vueBLLHeader})`"
       loading="lazy"
     >
       <div class="container">
@@ -62,11 +63,10 @@ onUnmounted(() => {
               class="text-white pt-3 mt-n5 me-2"
               :style="{ display: 'inline-block ' }"
             >
-              Material Kit 2
+              Burning Lowlands
             </h1>
             <p class="lead text-white px-5 mt-3" :style="{ fontWeight: '500' }">
-              Start the Development With Bootstrap 5 Design System inspired by
-              Material Design.
+              Wild fire prevention, preparadeness and regulatory environment in the Netherlands
             </p>
           </div>
         </div>
@@ -293,5 +293,5 @@ onUnmounted(() => {
       </div>
     </div>
   </div>
-  <DefaultFooter />
+  <FooterDefault />
 </template>

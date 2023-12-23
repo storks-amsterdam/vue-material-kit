@@ -2,7 +2,9 @@
 import { onMounted } from "vue";
 
 // example components
-import DefaultNavbar from "@/examples/navbars/NavbarDefault.vue";
+//example components
+import NavbarDefault from "@/components/NavbarDefault.vue";
+import FooterDefault from "@/components/FooterDefault.vue";
 import Header from "@/examples/Header.vue";
 
 //Vue Material Kit 2 components
@@ -17,7 +19,7 @@ onMounted(() => {
 });
 </script>
 <template>
-  <DefaultNavbar transparent />
+  <NavbarDefault transparent />
   <Header>
     <div
       class="page-header align-items-start min-vh-100"
@@ -168,4 +170,5 @@ onMounted(() => {
       </footer>
     </div>
   </Header>
+  <FooterDefault />
 </template>

@@ -1,6 +1,6 @@
 <script setup>
 // example components
-import DefaultNavbar from "../../../examples/navbars/NavbarDefault.vue";
+import NavbarDefault from "@/components/NavbarDefault.vue";
 import Header from "../../../examples/Header.vue";
 
 // sections
@@ -13,7 +13,13 @@ import Contact from "./Sections/AuthorContact.vue";
 import image from "@/assets/img/city-profile.jpg";
 </script>
 <template>
-  <DefaultNavbar transparent />
+  <div class="container position-sticky z-index-sticky top-0">
+    <div class="row">
+      <div class="col-12">
+        <NavbarDefault transparent />
+      </div>
+    </div>
+  </div>
   <Header>
     <div
       class="page-header min-height-400"
